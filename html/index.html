@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="shortcut icon" type="image/JPG" href="../icons/favicon.JPG" sizes="32x32" />
+  <title>Fee & Payment (Money Editor)</title>
+  <script src="https://kit.fontawesome.com/34813b737f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!---sidebar---->
+  <div class="sidebar">
+
+    <a href="#"><img class="icons" src="../icons/icon1.JPG" alt="icon1" /></a>
+    <a href="#"><img class="icons" src="../icons/icon2.JPG" alt="icon2" /></a>
+    <a href="#"><img class="icons" src="../icons/icon3.JPG" alt="icon3" /></a>
+    <a href="#"><img class="icons" src="../icons/icon4.JPG" alt="icon4" /></a>
+    <a href="#"><img class="icons" src="../icons/icon5.JPG" alt="icon5" /></a>
+    <a href="#"><img class="icons" src="../icons/icon6.JPG" alt="icon6" /></a>
+    <a href="#"><img class="icons" src="../icons/icon7.JPG" alt="icon7" /></a>
+    <a href="#"><img class="icons" src="../icons/icon8.JPG" alt="icon8" /></a>
+    <a href="#"><img class="icons" src="../icons/icon9.JPG" alt="icon9" /></a>
+    <a href="#"><img class="icons" src="../icons/icon10.JPG" alt="icon10" /></a>
+    <a href="#"><img class="icons" src="../icons/icon12.JPG" alt="icon12" /></a>
+    <a href="#"><img class="icons" src="../icons/icon13.JPG" alt="icon13" /></a>
+    <a href="#"><img class="icons" src="../icons/icon14.JPG" alt="icon14" /></a>
+    <a href="#"><img class="icons" src="../icons/icon15.JPG" alt="icon15" /></a>
+    <a href="#"><img class="icons" src="../icons/icon16.JPG" alt="icon16" /></a>
+  </div>
+  <!----->
+  <div class="container-fluid other">
+    <!---navbar----->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light ">
+        <a class="navbar-brand" href="#">
+          <img src="../logo1.JPG" alt="logo" style="width:40px; height:40px;">Cogent</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><svg class="nav-icons bell" xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                </svg></a>
+            </li>
+
+            <li class="nav-item">
+              <div class="user">
+
+                <div class="user-information">
+                  <p>Sandra Johnson</p>
+                  <p id="user-position">Clerk</p>
+                </div>
+
+                <svg class="nav-icons" id="avatar" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+    <!---------->
+
+    <!---Main Body---->
+    <div class="main">
+      <div class="headline1">
+        <a href="#" class="a1">Home<i class="fa fa-fw fa-angle-right"></i></a>
+        <a href="#" class="a2">Money Editor</a>
+      </div>
+      <div class="headline2">
+        <h4>Money Editor</h4>
+      </div>
+
+      <div class="para1">
+        <span class=p1>Search By <span id="p3">*</span></span>
+        <span class="p2">ID <span id="p3">*</span></span>
+
+      </div>
+
+      <div class="search1">
+        <form class="form-inline">
+          <select id="myList">
+            <option value="1">Person</option>
+            <option value="2" id="case">Case</option>
+          </select>
+          <input type="text" class="form-control box2" placeholder="Type here" size="100">
+
+          <button type="submit" class="btn btn-primary b1">Search</button>
+        </form>
+        <div class="headline3">
+          <h4>Maintain Fees</h4>
+        </div>
+
+      </div>
+      <div class="table1">
+        <table id="table-1" class="table">
+          <thead class="th1">
+            <tr>
+              <th><i class="far fa-square"></i></th>
+              <th>CaseID</th>
+              <th>Description</th>
+              <th>Defendant Name</th>
+              <th>Due Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="tb1">
+            <tr>
+              <td><i class="far fa-square"></i></td>
+              <td><a href="#" id="table2-toggler"><i class="fa fa-fw fa-angle-down"></i></a><a
+                  href="#">CV-10-GrpA-00034</a></td>
+              <td>Jhon Doe vs Robert</td>
+              <td><a href="#">Robert Mills</a></td>
+              <td>10 Feb,2019 10:00</td>
+              <td><span class="active">Active</span></td>
+              <td><a id="symbol"><i class="fas fa-dollar-sign"></i></a>
+                <a id="symbol"><i class="fa fa-pencil-alt"></i></a>
+                <a id="symbol"><i class="far fa-trash-alt"></i></a>
+                <a class="i1"><i class="fa fa-ellipsis-v"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table2">
+          <table class="table tb2">
+            <thead class="th2">
+              <tr>
+                <th>ID</th>
+                <th>summary</th>
+                <th>Assessed On</th>
+                <th>Bond($)</th>
+                <th>Scheduled</th>
+                <th>Assessed</th>
+                <th>Balance</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody class="tbody2">
+              <tr>
+                <td><a href="#">AB-0012</a></td>
+                <td>Appearance Bond</td>
+                <td>10 Feb,2019 10.00 AM</td>
+                <td>100.00</td>
+                <td>0.00</td>
+                <td>999.30</td>
+                <td>499.70</td>
+                <td>10 Feb,2019 10.00 AM</td>
+              </tr>
+              <tr>
+                <td><a href="#">VF-1234</a></td>
+                <td>Voilation Fee</td>
+                <td>10 Feb,2019 10.00 AM</td>
+                <td>90.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>120.00</td>
+                <td>10 Feb,2019 10.00 AM</td>
+              </tr>
+              <tr>
+              <tr>
+                <td><a href="#">CF-9847</a></td>
+                <td>Certification Fee</td>
+                <td>10 Feb,2019 10.00 AM</td>
+                <td>250.00</td>
+                <td>0.00</td>
+                <td>19.10</td>
+                <td>98.10</td>
+                <td>10 Feb,2019 10.00 AM</td>
+              </tr>
+              <tr>
+                <td><a href="#">CF-0948</a></td>
+                <td>Clerks Fee</td>
+                <td>10 Feb,2019 10.00 AM</td>
+                <td>910.00</td>
+                <td>0.00</td>
+                <td>89.10</td>
+                <td>78.10</td>
+                <td>10 Feb,2019 10.00 AM</td>
+              </tr>
+              <tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Total Assessed</th>
+                <th>Total Bond</th>
+                <th>Total Scheduled</th>
+                <th colspan="5">total Balance Due</th>
+
+
+              </tr>
+              <tr>
+                <td>999.56</td>
+                <td>250.00</td>
+                <td>0.00</td>
+                <td colspan="5">1189.56</td>
+
+              </tr>
+            </tfoot>
+          </table>
+
+        </div>
+
+
+      </div>
+
+      <div class="drop">
+        <ul class="drop1">
+          <li><a href="#" id="openForm1"> Add New Cases Fees</a></li>
+          <li><a href="#">Adjust Bond</a></li>
+          <li><a href="#">Adjust Fees</a></li>
+          <li><a href="history.html">Fee Adjustment History</a></li>
+          <li><a href="#">Add payment Plan</a></li>
+          <li><a href="viewpayment.html">View Payment Plan</a></li>
+          <li><a href="#">Modify Payment Plan</a></li>
+          <li><a href="#"> Receipt Details</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Pop up Window  -->
+  <div id="caseForm" class="new-case-fee">
+    <form>
+      <div>
+        <h3>New Case Fee</h3>
+
+        <span class="close-button close">&times;</span>
+
+      </div>
+
+      <div class="form-group">
+        <label for="caseId">Case ID</label>
+        <input type="text" class="form-control" id="caseId" name="caseId" placeholder="CV-10GrpA-00034" required>
+      </div>
+      <div class="form-group">
+        <label for="violationCode">Violation Code </label>
+        <input type="text" class="form-control" id="violationCode" placeholder="Search" autocomplete="off"
+          placeholder="V28-020" required>
+        <span><i class="popup-search-icon fa fa-search" aria-hidden="true"></i></span>
+
+
+        <table id="violationCodeTable" class="table pop-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Violation Code</th>
+              <th>Description</th>
+              <th>Original Amount($)</th>
+              <th>Amount($)</th>
+              <th>Priority</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a href="">V28-020</a></td>
+              <td>Clerk-Appeal</td>
+              <td>50.00</td>
+              <td>50.00</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a href="">V28-020</a></td>
+              <td>Commissioner Fee</td>
+              <td>8.00</td>
+              <td>8.00</td>
+              <td>68</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a href="">V28-020</a></td>
+              <td>Condemnation</td>
+              <td>65.00</td>
+              <td>65.00</td>
+              <td>92</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a href="">V28-020</a></td>
+              <td>Copy Fees</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a href="">V28-020</a></td>
+              <td>Court Automation</td>
+              <td>50.00</td>
+              <td>50.00</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a href="">V28-020</a></td>
+              <td>Court Information</td>
+              <td>10.00</td>
+              <td>10.00</td>
+              <td>76</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" id="description" name="description" placeholder="John Doe Vs Robert"
+          required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="defandantName">Defendant Name</label>
+        <select class="form-control" id="defandantName">
+          <option value="rob">Robert Mills</option>
+          <option value="john">John Doe</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+
+        <label for="feeCode">Fee Code</label>
+        <input type="text" class="form-control" id="feeCode" autocomplete="off" placeholder="3106" required />
+        <span><i class="popup-search-icon fa fa-search" aria-hidden="true"></i></span>
+
+        <table id="feeCodeTable" class="table pop-table">
+
+          <thead>
+            <tr>
+              <th></th>
+              <th>Code</th>
+              <th>Summary</th>
+              <th>Amount($)</th>
+              <th>Priority</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" id="1"></td>
+              <td><a href="">3106</a></td>
+              <td>Clerk-Appeal</td>
+              <td>50.29</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="2"></td>
+              <td><a href="">13108</a></td>
+              <td>Commissioner Fee</td>
+              <td>0.00</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="3"></td>
+              <td><a href="">12345</a></td>
+              <td>Condemnation Awards</td>
+              <td>122.29</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="4"></td>
+              <td><a href="">12345</a></td>
+              <td>Copy Fees</td>
+              <td>29.12</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="5"></td>
+              <td><a href="">3106</a></td>
+              <td>Country Felony</td>
+              <td>5.00</td>
+              <td>76</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="5"></td>
+              <td><a href="">3106</a></td>
+              <td>Country Felony</td>
+              <td>5.00</td>
+              <td>76</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" id="5"></td>
+              <td><a href="">3106</a></td>
+              <td>Country Felony</td>
+              <td>5.00</td>
+              <td>76</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount ($)</label>
+        <input type="text" class="form-control" id="amount" name="amount" placeholder="0.00" required>
+      </div>
+
+      <div class="row">
+        <div class="col form-group">
+          <label for="dueOn">Due On</label>
+          <input type="date" class="form-control" id="dueOn" name="dueOn" required>
+        </div>
+        <div class="col form-group">
+          <label for="priority">Priority</label>
+          <input type="text" class="form-control" id="priority" name="priority" placeholder="14" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="payTo">Pay To</label>
+        <select class="form-control" id="payTo">
+          <option value="selected1">Select</option>
+          <option value="selected2">Select 2</option>
+        </select>
+
+      </div>
+      <div class="form-group">
+        <label for="comments">Comments</label>
+        <textarea class="form-control" id="comments" rows="3" placeholder="Type Here.." required></textarea>
+      </div>
+
+      <div class="button-div">
+        <button type="reset" class="btn btn-outline-dark">Cancel</button>
+        <button type="submit" class="btn  btn-dark submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script src="../javascript/script.js"></script>
+</body>
+
+</html>

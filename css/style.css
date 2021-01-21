@@ -1,0 +1,632 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #D5D3D3;
+}
+
+.sidebar {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #202340;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.icons{
+  width: 30px;
+  height: 25px;
+}
+
+
+.sidebar a {
+  padding: 3px 8px 8px 14px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: red;
+}
+
+.navbar{
+  background-color: white;
+  margin-right: -10px;
+
+}
+
+.main {
+  /*  margin : 25px  85px 0px 85px; Same as the width of the sidenav */
+  margin: 10px 10px 0 60px;
+  padding:20px;
+  background-color: white;
+  max-width: 100%;
+  height: 100%;
+}
+.headline1{
+font-size: 18px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.headline1 a{
+  text-decoration: none;
+}
+.a1{
+  color: blue;
+}
+.a2{
+  color: black;
+}
+.headline2{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.headline2 h4{
+  font-weight: bold;
+}
+.para1{
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 15px;
+
+}
+#p3{
+  color: red;
+}
+.p2{
+  margin-left: 100px;
+}
+.search1{
+  margin-left: 20px;
+  margin-top: 5px;
+}
+select{
+width: 150px;
+height: 35px;
+border-color: #D5D3D3;
+}
+option{
+  font-size: 20px;
+}
+.box2{
+  margin-left: 32px;
+}
+.b1{
+width: 120px;
+  background-color: #202340;
+  margin-left: 15px;
+}
+.b1:hover{
+  background-color: black;
+}
+.b1:active{
+  background-color: black;
+}
+.headline3{
+  margin-top:20px;
+}
+.headline3 h4{
+  font-weight: bold;
+}
+
+#symbol{
+  color: blue;
+  padding: 2px 8px;
+}
+.i1{
+  color: #484949;
+}
+.active{
+  background-color: #59B3EA;
+  padding: 4px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+ 
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 55px;
+}
+.nav-icons {
+  margin-right: 20px;
+  max-width: 100%;
+}
+.user-information {
+  line-height: 0px;
+  text-align: right;
+  margin-top: 10px;
+  float: left;
+  padding-right: 10px;
+}
+
+.user {
+  padding: 0 0 0 25px;
+  border-left: 2px solid #e9e7e7;
+}
+
+#user-position {
+  font-weight: bold;
+}
+
+#avatar {
+  background-color: #4ad295;
+  border-radius: 50%;
+  margin-right: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.drop{
+  border: 1px solid blak;
+  background-color: white;
+  width: 200px;
+  z-index: 1;
+  position: absolute;
+  bottom: 85px;
+  right: 105px;
+  display: none;
+  box-shadow: 2px 2px 7px 7px  #D5D3D3;
+
+}
+
+.drop a{
+  text-decoration: none;
+  color: black;
+}
+.drop li:hover{
+  background-color: #D5D3D3;
+}
+ul.drop1{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+/*             */
+
+li {
+  padding: 2px 0 2px 13px;
+  font-size: 1.0rem;
+}
+
+/*
+.table1{
+   display: none;
+}
+.table2{
+  display: none;
+}
+
+*/
+.th1, .th2{
+  background-color: #E8E8E8;
+  font-weight: bold;
+  font-size: 0.9rem;
+
+}
+
+.tb1{
+  background-color: #EBFAF3;
+
+
+}
+.tbody2{
+  background-color: #FAFAFA;
+
+}
+tfoot {
+  background-color: #F1F1F1;
+}
+tfoot > tr > th{
+color: #CECDCD;
+font-weight: bold;
+}
+td{
+  padding-left: 30px;
+  text-align: left;
+}
+table{
+  margin: 10px;
+}
+
+
+
+/*
+.table1 {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.th1 {
+  background-color: #E8E8E8;
+  opacity: 30%;
+}
+
+.tb1 {
+  background-color: #D4F8F1;
+}
+
+
+.table2 {
+  margin-top: -16px;
+  height: 100px;
+  border-collapse: collapse;
+}
+
+
+tfoot {
+  background-color: #F1F1F1;
+}
+
+.th2,
+.th1 {
+  background-color: #E8E8E8;
+}
+
+.tb2 {
+  background-color: #D9D9EA;
+}
+*/
+
+
+.new-case-fee {
+  padding: 20px;
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#violationCode,
+#feeCode {
+  display: inline-block;
+}
+
+.popup-search-icon {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.close-button {
+  font-size: 35px;
+  color: #000000;
+  padding-top: 25px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: rgb(119, 156, 204);
+}
+
+.button-div {
+  float: right;
+  padding: 20px 0;
+}
+
+#caseForm {
+  display: none;
+}
+
+.submit-button {
+  background-color: #202340;
+}
+
+
+th {
+  font-size: 0.8rem;
+}
+
+td {
+  font-size: 0.9rem;
+}
+
+.pop-table {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: #ffffff;
+  border: 2px solid #f0f0f0;
+  overflow: auto;
+}
+
+
+/* slide 8 css */
+
+.box{
+
+  background-color: white;
+  width: 89%;
+  height: 740px;
+  margin: 40px auto;
+
+}
+
+.headers{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+table{
+  margin-top: 30px; 
+  table-layout: auto;
+  width: 100%;
+  
+}
+
+.boxforpayment{
+
+  background-color: white;
+  width: 87%;
+  height:fit-content;
+  margin: 40px auto;
+
+}
+
+
+
+#selectButton{
+   float: right;
+  
+   margin-right: 25px;
+   width: 80px;
+}
+
+#cancelButton{
+   float: right;
+  
+   margin-right: 25px;
+   width: 80px;
+}
+
+input[type=search]{
+  width: 95%;
+  height: 40px;
+  margin: 50px;
+  border: 1px solid gray;
+  box-shadow:  6px 5px 10px #888888;
+  outline: none;
+}
+
+.flow{
+  
+  padding-top: 50px;
+}
+.flow a {
+  text-decoration: none;
+}
+
+.heading{
+
+  margin-top: 25px;
+}
+
+
+/* style for paymentplan */
+
+
+#formstyle{
+
+  margin: 20px;
+
+}
+
+#formstyle .row{
+
+  margin-top: 20px;
+
+}
+
+.dropdown{
+
+margin: 10px 15px;
+float: left;
+}
+
+#ddtext{
+width: 50px;
+}
+
+
+
+.status{
+margin: 30px;
+}
+
+.form-check{
+
+margin: 10px;
+}
+
+#select{
+text-transform: none;
+display: block;
+width: 30%;
+height: calc(2.25rem + 2px);
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+position: relative;
+top: 41px;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#selectButton2{
+  float: right;
+  position: relative;
+  bottom: 50px;
+  margin-right: 25px;
+  width: 80px;
+}
+
+#cancelButton2{
+  float: right;
+  position: relative;
+  bottom: 50px;
+  margin-right: 25px;
+  width: 80px;
+}
+
+.controls{
+  padding: 70px;
+}
+
+@media screen and (max-width: 980px){
+  input[type=search]{
+ /* width: 75%;*/
+  height: 40px;
+  width: 100%;
+  padding: 0%;
+ /* margin: 50px;*/
+  }
+
+  #select{
+    display: block;
+    width: 89%;
+    margin-left: 43px;
+    margin-bottom: 50px;
+    }
+    
+
+}
+
+
+
+.serch-icon{
+position: absolute;
+left: 0;
+padding: 60px;
+margin-left: 10px;
+}
+
+.search-bar-values{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 0 50px;;
+  margin-top: 60px;
+}
+
+.bar-values{
+  
+  padding-left: 15px;
+ 
+}
+
+/* history css */
+
+.history {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align:  center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+.active, .history:hover {
+  background-color: #ccc;
+}
+.day p{
+
+  text-align: left;
+  margin-left: 3px;
+
+}
+.day p a{
+  text-decoration: none;
+  
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.contentbox{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.section1{
+
+  width: 170px ;
+  ;
+  text-align: left;
+  font-size: small;
+  
+
+}
+.section2{
+  width: 85%;
+  padding-left: 12px;
+  
+
+}
+
+.day{
+  border-right: 2px solid #777;
+  height: 520px
+}
+
+.day a{
+  color: #000000;
+  display: block;
+  padding-left: 40px;
+  border-top:1px solid #777;
+  text-decoration: none;
+}
+.table-responsive::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 980px){
+  input[type=search]{
+  width: 75%;
+  height: 40px;
+  margin: 50px;
+  }
+
+  #select{
+    display: block;
+    width: 89%;
+    margin-left: 43px;
+    margin-bottom: 50px;
+    }
+
+}
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  .new-case-fee {
+    width: 100%;
+  }
+}

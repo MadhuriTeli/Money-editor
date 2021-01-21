@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="shortcut icon" type="image/JPG" href="../icons/favicon.JPG" sizes="32x32" />
+  <title>Fee & Payment (Money Editor)</title>
+  <script src="https://kit.fontawesome.com/34813b737f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!---sidebar---->
+  <div class="sidebar">
+
+    <a href="#"><img class="icons" src="../icons/icon1.JPG" alt="icon1" /></a>
+    <a href="#"><img class="icons" src="../icons/icon2.JPG" alt="icon2" /></a>
+    <a href="#"><img class="icons" src="../icons/icon3.JPG" alt="icon3" /></a>
+    <a href="#"><img class="icons" src="../icons/icon4.JPG" alt="icon4" /></a>
+    <a href="#"><img class="icons" src="../icons/icon5.JPG" alt="icon5" /></a>
+    <a href="#"><img class="icons" src="../icons/icon6.JPG" alt="icon6" /></a>
+    <a href="#"><img class="icons" src="../icons/icon7.JPG" alt="icon7" /></a>
+    <a href="#"><img class="icons" src="../icons/icon8.JPG" alt="icon8" /></a>
+    <a href="#"><img class="icons" src="../icons/icon9.JPG" alt="icon9" /></a>
+    <a href="#"><img class="icons" src="../icons/icon10.JPG" alt="icon10" /></a>
+    <a href="#"><img class="icons" src="../icons/icon12.JPG" alt="icon12" /></a>
+    <a href="#"><img class="icons" src="../icons/icon13.JPG" alt="icon13" /></a>
+    <a href="#"><img class="icons" src="../icons/icon14.JPG" alt="icon14" /></a>
+    <a href="#"><img class="icons" src="../icons/icon15.JPG" alt="icon15" /></a>
+    <a href="#"><img class="icons" src="../icons/icon16.JPG" alt="icon16" /></a>
+  </div>
+  <!----->
+  <div class="container-fluid other">
+    <!---navbar----->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light ">
+        <a class="navbar-brand" href="#">
+          <img src="../logo1.JPG" alt="logo" style="width:40px; height:40px;">Cogent</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><svg class="nav-icons bell" xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                </svg></a>
+            </li>
+
+            <li class="nav-item">
+              <div class="user">
+
+                <div class="user-information">
+                  <p>Sandra Johnson</p>
+                  <p id="user-position">Clerk</p>
+                </div>
+
+                <svg class="nav-icons" id="avatar" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+    <!---------->
+      
+  <div class="boxforpayment container-fluid">
+    <div class="flow">
+      <a href="#" class="a1">Home<i class="fa fa-fw fa-angle-right"></i></a>
+      <a href="#" class="a2">Money Editor<i class="fa fa-fw fa-angle-right"></i></a>
+      <a href="#" class="a2">Create Payment Plan</a>
+    </div>
+
+    <form action="" id="formstyle">
+      <h3 class="heading">Create Payment Plan</h3>
+      <div class="persondetails">
+        <div class="row">
+          <div class="col-md-3 sm-12">
+            <label for="personID">Person Id</label>
+            <input type="text" id="personID" class="form-control" placeholder="personID">
+          </div>
+          <div class="col-md-3 sm-12">
+            <label for="defendantName">Defendant Name</label>
+            <input type="text" id="defendantName" class="form-control" placeholder="Defendant Name">
+          </div>
+        </div>
+      </div>
+
+
+
+      <h5 class="heading">Plan Attributes</h5>
+      <hr>
+      <div class="section">
+        <div class="row ">
+          <div class="col-md-3 sm-12">
+            <label for="personID">Person Id</label>
+            <input type="text" id="personID" class="form-control" placeholder="personID">
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-md-3 sm-12">
+            <label for="planbalance">Plan Balance</label>
+            <input type="text" class="form-control" id="planbalance">
+          </div>
+          <div class="col-md-3 sm-12">
+            <label for="regularpayment">Regular Payment</label>
+            <input type="text" class="form-control" id="regularpayment">
+          </div>
+          <div class="col-md-3 sm-12">
+            <label for="status">Status</label>
+            <input type="text" class="form-control" id="status">
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-3 sm-12">
+            <label class="control-label" for="date">Date</label>
+            <input class="form-control" id="date" name="date" type="date" />
+          </div>
+
+          <div class="col-md-3 sm-12">
+            <label class="control-label" for="date">Date</label>
+            <input class="form-control" id="date" name="date" type="date" />
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-md-3 sm-12">
+            <label class="control-label" for="date">Date</label>
+            <input class="form-control" id="date" name="date" type="date" />
+          </div>
+
+          <div class="col-md-3 sm-12">
+            <label class="control-label" for="date">Date</label>
+            <input class="form-control" id="date" name="date" type="date" />
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <p class="heading">Payment Recurrence Plan </p>
+          </div>
+          <div class="form-check">
+            <div class="col-md-3 sm-12">
+              <input class="form-check-input" type="radio" name="Month" id="monthly">
+              <label class="form-check-label" for="monthly">
+                Monthly
+              </label>
+            </div>
+          </div>
+
+          <div class="form-check">
+            <div class="col-md-3 sm-12">
+              <input class="form-check-input" type="radio" name="Week" id="weekly">
+              <label class="form-check-label" for="weekly">
+                Weekly
+              </label>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <div class="row ">
+          <div class="section">
+            <div class="col-md-12">
+              &nbsp;
+              Custom
+            </div>
+
+            <div class="dropdown show">
+              <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                First
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">First</a>
+                <a class="dropdown-item" href="#">Second</a>
+                <a class="dropdown-item" href="#">Third</a>
+                <a class="dropdown-item" href="#">Fourth</a>
+                <a class="dropdown-item" href="#">Last</a>
+
+              </div>
+            </div>
+
+
+            <div class="dropdown show">
+              <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Friday
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Monday</a>
+                <a class="dropdown-item" href="#">Tuesday</a>
+                <a class="dropdown-item" href="#">Wednesday</a>
+                <a class="dropdown-item" href="#">Thursday</a>
+                <a class="dropdown-item" href="#">Friday</a>
+                <a class="dropdown-item" href="#">Saturday</a>
+                <a class="dropdown-item" href="#">Sunday</a>
+
+              </div>
+
+            </div>
+
+            <div class="dropdown">
+              of every &nbsp;<input id="ddtext" type="text" name="" id=""> &nbsp; Months (s)
+            </div>
+
+          
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <h5 class="heading">Payment Schedule</h5>
+      <hr>
+
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col"><input type="checkbox"></th>
+            <th scope="col">Due On</th>
+            <th colspan="4" scope="col">Schedule Payment</th>
+            <th scope="col">Amount Paid</th>
+            <th scope="col">Payment Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><input type="checkbox"></th>
+            <td>21-01-2021</td>
+            <td colspan="4">25.0</td>
+            <td id="left">0.0</td>
+            <td>25.0</td>
+          </tr>
+          <tr>
+            <th scope="row"><input type="checkbox"></th>
+            <td>21-01-2021</td>
+            <td colspan="4">12.0</td>
+            <td>0.0</td>
+            <td>25.0
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><input type="checkbox"></th>
+            <td>21-01-2021</td>
+            <td>25.0</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td id="left">0.0</td>
+            <td>25.0</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+
+        <div class="col-md-3 sm-12">
+          <label for="label1">Remember to allocate </label>
+          <input type="text" id="label1" class="form-control" value="0.0">
+        </div>
+        <div class="col-md-3 sm-12">
+          <label for="label2">In Arrears </label>
+          <input type="text" id="label2" class="form-control" value="0.0">
+        </div>
+
+      </div>
+
+
+      <h5 class="heading">Debit Collection</h5>
+      <hr>
+      <div class="status"></div>
+      <div class="section debitcollection">
+        <div class="row">
+
+          <div class="col-md-3 sm-12">
+            <label class="control-label" for="date">Sent to Collection On </label>
+            <input class="form-control" id="date" name="date" type="date" />
+          </div>
+
+          <div class="col-md-3 sm-12">
+            <label class="control-label" for="date">Un Collection On</label>
+            <input class="form-control" id="date" name="date" type="date" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-check ">
+            <input class="form-check-input" type="checkbox" value="" id="check">
+            <label class="form-check-label" for="check">
+              Exempt from collection
+            </label>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <strong class="heading">Update Debt Collection Status</strong>
+        </div>
+        <div class="row">
+          <div class="col-md-4 sm-12">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="dateradio">
+              <label class="control-label" for="dateradio">Recall On/Reason</label>
+              <input class="form-control" id="dateradio" name="dateradio" type="date" />
+            </div>
+          </div>
+
+
+          <select class="form-select" id="select" aria-label="Default select example">
+            <option selected>Select</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+
+        </div>
+        <div class="row">
+          <div class="col-md-4 sm-12">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="dateradio">
+              <label class="control-label" for="dateradio">Resend On</label>
+              <input class="form-control" id="dateradio" name="dateradio" type="date" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 sm-12">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="dateradio">
+              <label class="control-label" for="dateradio">Hold On </label>
+              <input class="form-control" id="dateradio" name="dateradio" type="date" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 sm-12">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="dateradio">
+              <label class="control-label" for="dateradio">Release Hold On </label>
+              <input class="form-control" id="dateradio" name="dateradio" type="date" />
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="controls">
+       <button id = "selectButton2" class="btn btn-dark align-self-end ml-auto" >Select</button>
+            <button id="cancelButton2" class="btn btn-outline-dark align-self-end ml-auto">Cancel</button>
+      </div>
+</div>
+
+  </div>
+
+  </form>
+
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="shortcut icon" type="image/JPG" href="../icons/favicon.JPG" sizes="32x32" />
+  <title>Fee & Payment (Money Editor)</title>
+  <script src="https://kit.fontawesome.com/34813b737f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!---sidebar---->
+  <div class="sidebar">
+
+    <a href="#"><img class="icons" src="../icons/icon1.JPG" alt="icon1" /></a>
+    <a href="#"><img class="icons" src="../icons/icon2.JPG" alt="icon2" /></a>
+    <a href="#"><img class="icons" src="../icons/icon3.JPG" alt="icon3" /></a>
+    <a href="#"><img class="icons" src="../icons/icon4.JPG" alt="icon4" /></a>
+    <a href="#"><img class="icons" src="../icons/icon5.JPG" alt="icon5" /></a>
+    <a href="#"><img class="icons" src="../icons/icon6.JPG" alt="icon6" /></a>
+    <a href="#"><img class="icons" src="../icons/icon7.JPG" alt="icon7" /></a>
+    <a href="#"><img class="icons" src="../icons/icon8.JPG" alt="icon8" /></a>
+    <a href="#"><img class="icons" src="../icons/icon9.JPG" alt="icon9" /></a>
+    <a href="#"><img class="icons" src="../icons/icon10.JPG" alt="icon10" /></a>
+    <a href="#"><img class="icons" src="../icons/icon12.JPG" alt="icon12" /></a>
+    <a href="#"><img class="icons" src="../icons/icon13.JPG" alt="icon13" /></a>
+    <a href="#"><img class="icons" src="../icons/icon14.JPG" alt="icon14" /></a>
+    <a href="#"><img class="icons" src="../icons/icon15.JPG" alt="icon15" /></a>
+    <a href="#"><img class="icons" src="../icons/icon16.JPG" alt="icon16" /></a>
+  </div>
+  <!----->
+  <div class="container-fluid other">
+    <!---navbar----->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light ">
+        <a class="navbar-brand" href="#">
+          <img src="../logo1.JPG" alt="logo" style="width:40px; height:40px;">Cogent</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><svg class="nav-icons bell" xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                </svg></a>
+            </li>
+
+            <li class="nav-item">
+              <div class="user">
+
+                <div class="user-information">
+                  <p>Sandra Johnson</p>
+                  <p id="user-position">Clerk</p>
+                </div>
+
+                <svg class="nav-icons" id="avatar" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+    <!---------->
+
+    <div class="box">
+      <h3 class="headline">Fee Adjustment History</h3>
+      <div class="search ">
+        <div class="row">
+          <div class="col-12">
+            <span><i class="serch-icon fa fa-search" aria-hidden="true"></i></span>
+            <div class="search-bar-values">
+              <span class="bar-values">Adjusted on <i class="fa fa-calendar"></i></span>
+              <span class="bar-values">summary <i class="fa fa-fw fa-angle-down"></i></span>
+              <span class="bar-values">Adjusted by <i class="fa fa-fw fa-angle-down"></i></span>
+            </div>
+            <input type="search">
+  
+          </div>
+        </div>
+  
+      </div>
+<div class="contentbox">
+<div class="section1">
+        
+  <div class="day">
+    <p style="font-size: medium;">History</p>
+    <a href="#" class="nav-link">Today</a>
+    <a href="#" class="nav-link">Yesterday</a>
+    <a href="#" class="nav-link">Friday</a>
+    <a href="#" class="nav-link">Thursday</a>
+    <a href="#" class="nav-link">Wednesday</a>
+    <a href="#" class="nav-link">Tuesday</a>
+    <a href="#" class="nav-link">Monday</a>
+    <a href="#" class="nav-link">Pastweek</a>      
+         
+
+
+        
+    </div>
+</div>
+    <div class="section2">
+      <div class="table-responsive">
+        <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Summary</th>
+                <th>Orignal Amount</th>
+                <th>Adjustment</th>
+                <th>New Amount </th>
+                <th>Adjusted On</th>
+                <th>Adjusted by</th>
+                <th>Reason</th>
+                <th>Cpmments</th>
+            </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>John </td>
+                <td>9.00</td>
+                <td>(12.3)</td>
+                <td>1.55</td>
+                <td>10 Feb 2019</td>
+                <td>Unit Test</td>
+                <td>Waived-Government</td>
+                <td>-</td>
+                
+            </tr>
+            
+            <tr>
+                <td>Mathew okahn </td>
+                <td>5.00</td>
+                <td>(12.3)</td>
+                <td>1.55</td>
+                <td>10 Feb 2019</td>
+                <td>Unit Test</td>
+                <td>Waived-Government</td>
+                <td>-</td>
+                
+            </tr>
+            
+                <tr>
+                    <td>Haslen go </td>
+                    <td>2.00</td>
+                    <td>(22.3)</td>
+                    <td>1.55</td>
+                    <td>10 Feb 2019</td>
+                    <td>Unit Test</td>
+                    <td>Waived-Government</td>
+                    <td>-</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Johny par </td>
+                    <td>2.00</td>
+                    <td>(45.3)</td>
+                    <td>1.55</td>
+                    <td>10 Feb 2019</td>
+                    <td>Unit Test</td>
+                    <td>Waived-Government</td>
+                    <td>-</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Angela Blue </td>
+                    <td>1.00</td>
+                    <td>(1.3)</td>
+                    <td>6.55</td>
+                    <td>30 Mar 2019</td>
+                    <td>Unit Test</td>
+                    <td>Waived-Government</td>
+                    <td>-</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Chris </td>
+                    <td>12.00</td>
+                    <td>(42.3)</td>
+                    <td>1.55</td>
+                    <td>10 Jan 2019</td>
+                    <td>Unit Test</td>
+                    <td>Waived-Government</td>
+                    <td>-</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Howdy </td>
+                    <td>4.00</td>
+                    <td>(2.3)</td>
+                    <td>1.55</td>
+                    <td>14 Feb 2019</td>
+                    <td>Unit Test</td>
+                    <td>Waived-Government</td>
+                    <td>-</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Cena </td>
+                    <td>32.00</td>
+                    <td>(32.7)</td>
+                    <td>7.55</td>
+                    <td>10 Feb 2019</td>
+                    <td>Unit Test</td>
+                    <td>Waived-Government</td>
+                    <td>-</td>
+                    
+                </tr>   
+              
+            </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  
+      
+      <button id="cancelButton" class="btn btn-outline-dark align-self-end ml-auto">Close</button>
+
+
+</div>
+
+    </div>
+
+
+            
+    <script>
+        var tab = document.getElementsByClassName("history");
+        var i;
+for (i = 0; i < tab.length; i++) {
+  tab[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+    
+</body>
+</html>
