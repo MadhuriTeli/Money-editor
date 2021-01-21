@@ -276,7 +276,8 @@ tfoot {
 */
 
 
-.new-case-fee {
+.new-case-fee,
+#historyWindow {
   padding: 20px;
   height: 100%;
   width: 45%;
@@ -537,6 +538,8 @@ margin-left: 10px;
 
 /* history css */
 
+
+
 .history {
   background-color: #eee;
   color: #444;
@@ -547,8 +550,16 @@ margin-left: 10px;
   border: none;
   outline: none;
   transition: 0.4s;
+  
 }
 
+
+#historyWindow {
+  display: none;
+  z-index: 2;
+   width: 90%;
+  
+}
 
 .active, .history:hover {
   background-color: #ccc;
@@ -624,9 +635,17 @@ margin-left: 10px;
     }
 
 }
+#table-history{
+  overflow: auto;
+}
+
+
 /*Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
   .new-case-fee {
+    width: 100%;
+  }
+  #historyWindow{
     width: 100%;
   }
 }
