@@ -1,3 +1,6 @@
+$('.b1').click(function () {
+    $('.tb1').toggle();
+});
 $(document).ready(function () {
   $(".b1").click(function () {
     $(".th1").css({
@@ -6,15 +9,7 @@ $(document).ready(function () {
     });
   });
 
-  //alert("hello");
-  /*
-         $("#case").on("click", function () {
-                $("#table-1").show();
-        }); */
 
-  //  $("#case").click(function () {
-  //   $("#table-1").show();
-  // });
 
   $(".i1").click(function () {
     $(".drop").toggle();
@@ -48,22 +43,5 @@ $(document).ready(function () {
   $("#cancelButton").on("click", function () {
     $("#historyWindow").hide();
   });
-  /////////////////history//////////////
 
-  /*
-    
-            var tab = document.getElementsByClassName("history");
-        var i;
-for (i = 0; i < tab.length; i++) {
-  tab[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-*/
 });
